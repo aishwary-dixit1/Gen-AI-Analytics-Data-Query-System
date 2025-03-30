@@ -2,6 +2,8 @@
 # **Gen AI Backend - Data Query Simulation Engine**  
 This is a lightweight backend service that simulates a simplified version of GrowthGear's Gen AI Analytics tool. It provides a REST API to convert natural language queries into SQL and executes them against a mock SQLite database.  
 
+### **Deployed on Render** - https://gen-ai-analytics-data-query-system.onrender.com
+
 ## **Table of Contents**  
 - [Features](#features)  
 - [Tech Stack](#tech-stack)  
