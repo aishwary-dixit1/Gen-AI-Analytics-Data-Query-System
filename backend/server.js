@@ -2,7 +2,7 @@ import express from "express";
 import cors from "cors";
 import authRoutes from "./src/routes/authRoutes.js";
 import queryRoutes from "./src/routes/queryRoutes.js";
-import { env, node_env } from "./src/config/env.js";
+import env from "./src/config/env.js";
 import cookieParser from "cookie-parser";
 
 import path from "path";
@@ -22,7 +22,7 @@ app.use(cookieParser());
 app.use("/api/auth", authRoutes);
 app.use("/api", queryRoutes);
 
-if(node_env === "production") {
+if(env.node_env === "production") {
     app.use(express.static(path.join(__dirname, "../frontend/dist")));
 
     app.get("*", (req, res) => {
